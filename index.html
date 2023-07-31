@@ -1,237 +1,393 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-	<head>
-		<title>Patrick Attankurugu - Data Science Enthusiast</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="Patrick Attankurugu - Data Scientist and AI Developer" />
-		<meta name="keywords" content="Data Science, AI Developer, Patrick Attankurugu" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/jquery.scrolly.min.js"></script>
-		<script src="js/jquery.scrollzer.min.js"></script>
-		<script src="js/skel.min.js"></script>
-		<script src="js/skel-layers.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
-	</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Patrick Attankurugu - AI Developer, CTO, Innovator, and Entrepreneur. Welcome to my personal portfolio.">
+    <meta name="keywords" content="Patrick Attankurugu, AI Developer, CTO, Innovator, Portfolio">
+    <title>Patrick Attankurugu | AI Developer, CTO, and Innovator</title>
 
-	<body>
-  
+    <!-- Include Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-		<!-- Header -->
-			<div id="header" class="skel-layers-fixed">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
-				<div class="top">
+    <!-- Include custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 
-					<!-- Logo -->
-					<div id="logo">
-							<span class="image avatar48"><img src="images/intro.jpg" alt="" /></span>
-							<h1 id="title">Patrick Attankurugu</h1>
-							<p>Software/AI developer</p>
-						</div>
+</head>
 
-					<!-- Nav -->
-						<nav id="nav">
-							<!--
-							
-								links in one of two formats:
-								
-								1. Hash link (scrolls to a different section within the page)
-								
-								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Patrick Attankurugu</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="experience.html">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-								2. Standard link (sends the user to another page/site)
+ <!-- Hero Section -->
+<section id="hero" class="d-flex align-items-center">
+    <div class="hero-content container text-center d-flex flex-column justify-content-center align-items-center">
+        <img src="images/headshot.png" alt="Patrick's headshot" class="rounded-circle my-3 headshot">
+        <div class="hero-text">
+            <h1 class="display-4">Welcome, I'm Patrick</h1>
+            <p class="lead">An AI and Software Developer pushing the boundaries of innovation</p>
+        </div>
+        <a href="#about" class="btn btn-primary mt-3 hero-btn">Discover More</a>
+    </div>
 
-								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
-							
-							-->
-							<ul>
-								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-								
-								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-
-								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-								
-								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
-							</ul>
-						</nav>
-						
-				</div>
-				
-				<div class="bottom">
-
-					<!-- Social Icons -->
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/patrickattankurugu400/" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://www.facebook.com/profile.php?id=100077220122659" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="https://github.com/PatrickAttankurugu" class="icon fa-github"><span class="label">Github</span></a></li>
-							<li><a href="mailto:patricka.azuma@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-				
-				</div>
-			
-			</div>
-
-		<!-- Main -->
-			<div id="main">
-
-
-				<!-- Intro -->
-					<section id="top" class="one dark cover">
-						<header>
-							<h1>Welcome to my journey in Data Science</h1>
-							<p>I'm here to explore and create impactful AI systems</p>
-						</header>
-						<footer>
-							<a href="#About_me" class="button style2 scrolly-middle">More About Me</a>
-						</footer>
-					</section>
+    <!-- Code Animation -->
+    <div id="code-container" class="code-snippets">
+        <pre><code>// I'm Patrick Attankurugu</code></pre>
+        <pre><code>// AI and Software Developer</code></pre>
+        <pre><code>const greeting = 'Welcome to my portfolio';</code></pre>
+        <pre><code>console.log(greeting);</code></pre>
+        <pre><code>// Function to calculate Fibonacci sequence</code></pre>
+        <pre><code>function fibonacci(n) {</code></pre>
+        <pre><code>    if (n < 2) return n;</code></pre>
+        <pre><code>    return fibonacci(n - 1) + fibonacci(n - 2);</code></pre>
+        <pre><code>}</code></pre>
+        <pre><code>console.log('Fibonacci(7): ' + fibonacci(7));</code></pre>
+        <pre><code>// Machine Learning Model</code></pre>
+        <pre><code>// model = trainModel(data);</code></pre>
+        <pre><code>// prediction = model.predict(newData);</code></pre>
+    </div>
+</section>
 
 
-					<section id="banner">
-						<header>
-							<h2 id="About_me">Who Am I?</h2>
-						</header>
-						<p>I'm a proud participant of the Tertiary Digital Innovation Program cohort of 2022/2023. I love creating intelligent systems using data. Occasionally, I design websites to jazz things up!</p>
-						<footer>
-							<a href="#more" class="button style2 scrolly">More About Me</a>
-						</footer>
-					</section>
-					
-				<!-- Portfolio -->
-					<section id="portfolio" class="two">
-						<div class="container">
-					
-							<header>
-								<h2 id="more">My Projects</h2>
-							</header>
-							<p>I have spent the last couple of years building intelligent systems. I'm currently leading a fantastic team at Ghana Digital Centres Limited. We're creating an AI- powered software that proactively detects potential criminal activities, aiming to make Ghana a safer place!</p>
-						
-							<div class="row">
-								<div class="4u">
-									<article class="item">
-	<a href="https://joharrison.org" class="image fit"><img src="images/joharrison.jpeg" alt="Rev. Jo Harrison" /></a>
-	<header>
-		<h3>Rev. Jo Harrison</h3>
-		<h4>Personal Website of Rev. Jo Harrison, branch pastor for the London branch of Christian Restoration Ministries International</h4>
-	</header>
+
+
+
+        <!-- About Me Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="display-4">About Me</h2>
+                        <p>
+                            As an AI Developer and CTO, I strive to build innovative solutions that improve lives and drive progress. 
+                            With a strong foundation in software development and a keen interest in AI, 
+                            I am passionate about leveraging technology to solve complex problems. 
+                            Explore my site to learn more about my projects, skills, and professional background.
+                        </p>
+                        <a href="about.html" class="btn btn-primary mt-3">Read More</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="images/about_me.jpg" alt="About Me" class="img-fluid rounded-circle">
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Projects Section -->
+        <section id="projects" class="py-5 bg-light">
+            <div class="container">
+                <h2 class="display-4 text-center">Featured Projects</h2>
+                <div class="row">
+                    <!-- Project 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/joharrison.jpeg" alt="Project 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Joharrison.org</h5>
+                                <p class="card-text">Official website of Rev.Jo Harrison.</p>
+                                <a href="project1.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/sema.png" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title">SEMA</h5>
+                                <p class="card-text">A Predictive surveillance software</p>
+                                <a href="project2.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/dash.JPG" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Covid-19 Analytics Dashboard</h5>
+                                <p class="card-text">Developed in 2020 to continually pull real-time updates of covid from sources across the web.</p>
+                                <a href="project3.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 4 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/surveillance.png" alt="Project 4">
+                            <div class="card-body">
+                                <h5 class="card-title">SEMA Company Website</h5>
+                                <p class="card-text">Developed the company website of SEMA Technologies.</p>
+                                <a href="project4.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 5 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/job-scrapper.webp" alt="Project 5">
+                            <div class="card-body">
+                                <h5 class="card-title">Job Scrapper Software</h5>
+                                <p class="card-text">Software to automatically pull job postings from Jobberman, LinkedIn, Indeed and Glassdoor.</p>
+                                <a href="project5.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 6 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img class="card-img-top" src="images/to-do.png" alt="Project 6">
+                            <div class="card-body">
+                                <h5 class="card-title">A Task Manager </h5>
+                                <p class="card-text">Developed a software that you can use to manage schedules .</p>
+                                <a href="project6.html" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="projects.html" class="btn btn-primary mt-3">View All Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container text-center">
+        <h2 class="display-4">My Skills</h2>
+        <p class="lead">Here are some of my expertise.</p>
+        <div class="row">
+
+            <!-- Skill 1 -->
+            <div class="col-lg-4 col-md-6 my-3">
+                <i class="fas fa-code fa-3x text-primary mb-4"></i>
+                <h3 class="h4 mb-2">Software Development</h3>
+                <p>Proficient in developing web and software applications using various programming languages and frameworks.</p>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="col-lg-4 col-md-6 my-3">
+                <i class="fas fa-brain fa-3x text-primary mb-4"></i>
+                <h3 class="h4 mb-2">AI Development</h3>
+                <p>Experience in developing AI-powered applications and tools using cutting-edge machine learning techniques.</p>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="col-lg-4 col-md-6 my-3">
+                <i class="fas fa-brain fa-3x text-primary mb-4"></i>
+                <h3 class="h4 mb-2">Advanced AI Prompt Engineering</h3>
+                <p>After going through over six courses on AI prompt engineering, I bring a touch of magic to whatever task my team embarks on</p>
+            </div>
+
+            <!-- Skill 4 -->
+            <div class="col-lg-4 col-md-6 my-3">
+                <i class="fas fa-chart-line fa-3x text-primary mb-4"></i>
+                <h3 class="h4 mb-2">Data Science</h3>
+                <p>Proficient in data manipulation, analysis, and predictive modeling using various data science tools and techniques.</p>
+            </div>
+
+            <!-- Skill 5 -->
+            <div class="col-lg-4 col-md-6 my-3">
+                <i class="fas fa-users-cog fa-3x text-primary mb-4"></i>
+                <h3 class="h4 mb-2">Technical Leadership</h3>
+                <p>Experienced in leading technical teams, making critical IT decisions, and communicating effectively with diverse stakeholders.</p>
+            </div>
+
+            <!-- Skill 6 -->
+            <div class="col-lg-4 col-md-6 my-3">
+                <i class="fas fa-lightbulb fa-3x text-primary mb-4"></i>
+                <h3 class="h4 mb-2">Business Innovation</h3>
+                <p>Capable of identifying and implementing innovative technological solutions with a focus on business growth and development.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <a href="skills.html" class="btn custom-btn mt-4">View More</a>
+    </div>
+</section>
+
+
+<!-- Education Section -->
+<section id="education" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="display-4">Education</h2>
+        <p class="lead">My educational background and achievements.</p>
+        <div class="row">
+
+            <!-- Education 1 -->
+            <div class="col-lg-6 my-3">
+                <img src="images/bigboss.jpg" alt="university logo" class="img-fluid mb-4" style="height: 80px;">
+                <h3 class="h4 mb-2">Bolgatanga Senior High</h3>
+                <h4 class="h5 mb-2 text-muted">General Science</h4>
+                <p>Completed my senior high school education at Bolgatanga Senior High where I was the Science and Maths Quiz president.</p>
+            </div>
+
+            <!-- Education 2 -->
+            <div class="col-lg-6 my-3">
+                <img src="images/ug.jpg" alt="university logo" class="img-fluid mb-4" style="height: 80px;">
+                <h3 class="h4 mb-2">Bachelor's Degree in Computer Science</h3>
+                <h4 class="h5 mb-2 text-muted">University of Ghana</h4>
+                <p>Finished my bachelor's degree in Computer Science where I developed keen interest in machine learning and AI.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- BLOG SECTION -->
+<section id="#blog" class="blog-section py-5" >
+    <div class="container">
+        <h1 class="text-center mb-4">Blog</h1>
+        <div class="blog-posts">
+
+            <!-- Blog post 1 -->
+<article class="blog-post">
+    <img class="blog-post-image" src="images/Agric.jpg" alt="Image Description">
+    <h2 class="blog-post-title">AI in Agriculture: A Transformational Shift</h2>
+    <button class="blog-post-button" id="blog1">Read More</button>
 </article>
 
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
-										<header>
-											<h3>Churn Modeling for a bank</h3>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="https://sematech.netlify.app/" class="image fit"><img src="images/surveillance.png" alt="AI-Powered Surveillance Software" /></a>
-										<header>
-											<h3>Predictive Surveillance Software</h3>
-											<h4>A software that uses advanced AI to proactively control crime</h4>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://crmi-accra.netlify.app/" class="image fit"><img src="images/crmiaccra.jpg" alt="CRMI- Accra" /></a>
-										<header>
-											<h3>CRMI- Accra</h3>
-											<h4>Developer of the website of CRMI-Accra</h4>
-										</header>
-									</article>
-								</div>
-								<div class="4u">
-									<article class="item">
-										<a href="https://github.com/PatrickAttankurugu/job_scrapper" class="image fit"><img src="images/job-scrapper.webp" alt="" /></a>
-										<header>
-											<h3>Job Scrapper</h3>
-											<h4>In this project, I am automating job search processes by building a software that automatically pulls job postings from sources across the web</h4>
-										</header>
-									</article>
-									<article class="item">
-										<a href="https://patrickattankurugu.github.io/Scientific-Calculator/" class="image fit"><img src="images/calculator.png" alt="" /></a>
-										<header>
-											<h3>Scientific Calculator App</h3>
-											<h4>A calculator software</h4>
-										</header>
-									</article>
-								</div>
-							</div>
 
-						</div>
-					</section>
+           <!-- Blog post 2 -->
+<article class="blog-post">
+    <img class="blog-post-image" src="images/surveillance.png" alt="Image Description">
+    <h2 class="blog-post-title">Predictive Surveillance and AI: A New Era of Security</h2>
+    <a href="blog2.html">
+        <button class="blog-post-button">Read More</button>
+    </a>
+</article>
 
-					
-		
+            <!-- Blog post 3 -->
+<article class="blog-post">
+    <img class="blog-post-image" src="images/AI.png" alt="Image Description">
+    <h2 class="blog-post-title">My Transition from Chemistry to Computer Science</h2>
+    <a href="blog3.html">
+        <button class="blog-post-button" id="blog3">Read More</button>
+    </a>
+</article>
 
-			    <!----Resume--->
-
-					<section id="resume">
-						<div class="container">
-							<header>
-								<h2>Resume</h2>
-							</header>
-							<!--<div class="row">
-								<div class="col-lg-12 text-center">
-									<h2 class="section-heading" data-wow-offset="50" data-wow-delay="0.3s" style="color:#e9b628">Resume</h2>
-								</div>
-							</div> -->
-						<embed src="documents/PatrickAttankurugu.pdf" type="application/pdf" width="100%" height="1200px" />
-					</div>
-
-					</section>
+        </div>
+    </div>
+</section>
 
 
 
 
 
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
 
-							<header>
-								<h2>Let's Connect!</h2>
-							</header>
+        
+    <!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="display-4">Let's Get In Touch</h2>
+        <p class="lead">Interested in collaboration? Want to hire me? Or just want to say hi? Fill out the form below:</p>
 
-							<p>Whether you're looking for an online presence, want to give me a high-five for my work, or see potential for a collaboration, I'd love to hear from you! Let's talk about how we can create something amazing together!</p>
-							
-							<form method="post" action="#">
-								<div class="row 50%">
-									<div class="6u"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="6u"><input type="text" name="email" placeholder="Email" /></div>
-								</div>
-								<div class="row 50%">
-									<div class="12u">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-								</div>
-								<div class="row">
-									<div class="12u">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <form action="your-processing-script.php" method="post">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" required>
+                        <div id="emailHelp" class="form-text">I'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
-						</div>
-					</section>
-			
-			</div>
 
-		<!-- Footer -->
-		<div id="footer">
-			<!-- Copyright -->
-				<ul class="copyright">
-					<li>&copy;[2023] Patrick Attankurugu. All rights reserved.</li>
-				</ul>
-			
-		</div>
+    
+        <!-- Footer -->
+        <footer class="footer bg-dark text-white text-center py-3">
+            <div class="container">
+                <p>&copy; 2023 Patrick Attankurugu. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/patrickattankurugu400/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/PatrickAttankurugu" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100077220122659" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    <a href="https://twitter.com/Pat_Attankurugu" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
 
-	</body>
-</html>
+        <a href="#" id="back-to-top" class="back-to-top"><i class="fas fa-angle-up"></i></a>
+    
+        <!-- Include Bootstrap JS and custom JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script src="script.js"></script>
+
+    
+    </body>
+    
+    </html>
+    

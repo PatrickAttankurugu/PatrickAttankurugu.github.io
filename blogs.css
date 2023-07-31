@@ -1,0 +1,100 @@
+/* Add a global box-sizing to ease layout calculations */
+* {
+    box-sizing: border-box;
+}
+
+/* Container holding the blog elements */
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Hero image styling */
+.hero-image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Blog content styling */
+.blog-content {
+    width: 75%;
+    background-color: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content h1 {
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.blog-content h2 {
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+}
+.blog-content p {
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Image section styling */
+.image-section {
+    width: 75%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* For blog3.html - Subtitle styling */
+.subtitle {
+    font-size: 1.5em;
+    color: #555;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* For blog3.html - Conclusion styling */
+.conclusion {
+    background-color: #e3e3e3;
+    padding: 1em;
+    border-radius: 5px;
+    margin-top: 2em;
+    text-align: center;
+}
+
+/* Additional styles for inspirational quotes */
+.quote {
+    color: #008080;
+    font-style: italic;
+    margin: 2em 0;
+}
+
+/* Additional styles for final note */
+.final-note {
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2em;
+}
