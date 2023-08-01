@@ -1,0 +1,127 @@
+/* Base styles for all devices */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #444;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.waitlist-message {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+#waitlist-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#waitlist-form input {
+    height: 40px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+
+
+#waitlist-form button {
+    height: 50px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#waitlist-form button:hover {
+    background-color: #444;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: #343A40;
+    color: #F8F9FA;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.footer .social-links {
+    margin: 20px 0;
+}
+
+.footer .social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #F8F9FA;
+    transition: color 0.5s;
+}
+
+.footer .social-links a:hover {
+    color: #343a40;
+}
+
+.footer .social-links img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Styles for larger screens (tablets, laptops, desktops) */
+@media (min-width: 768px) {
+    .container {
+        width: 75%;
+    }
+
+    section {
+        padding: 40px 0;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    #waitlist-form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #waitlist-form input {
+        flex: 1;
+        margin-right: 10px;
+    }
+
+    #waitlist-form button {
+        flex-basis: 200px;
+        background-color: #2B2B2B;
+    }
+}
