@@ -30,16 +30,6 @@ $(document).ready(function() {
         }
     );
 
-    // When a user clicks on a card button, animate the project card
-    $(".card .btn").on('click', function(e) {
-        e.preventDefault();
-        
-        $(this).closest('.card').animate({
-            width: "toggle",
-            height: "toggle"
-        }, 1000);
-    });
-
     // Blog button event listener
     document.querySelector('#blog1').addEventListener('click', function() {
         window.location.href = 'blog1.html';
