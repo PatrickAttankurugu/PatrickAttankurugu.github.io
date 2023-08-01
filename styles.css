@@ -144,16 +144,26 @@ img {
 /*ABOUT SECTION*/
 
 #about {
-    padding: 50px 0;
-}
-
-#about .display-4,
-#about .lead {
+    padding: 3em 1em;
+    background-color: #A9A9A9;
     color: #343A40;
 }
 
+#about .display-4 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#about .lead {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
 #about img {
+    width: 100%;
     border-radius: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 2em;
 }
 
 #about .btn-primary {
@@ -161,12 +171,34 @@ img {
     color: #343A40;
     border: none;
     transition: background-color 0.5s;
+    padding: 0.6em 1em;
+    margin-top: 2em;
 }
 
 #about .btn-primary:hover {
     background-color: #F8F9FA;
     color: #343A40;
 }
+
+@media screen and (min-width: 768px) {
+    #about {
+        padding: 5em 3em;
+    }
+
+    #about .display-4 {
+        font-size: 3em;
+    }
+
+    #about .lead {
+        font-size: 1.6em;
+    }
+
+    #about img {
+        width: 70%;
+        margin-top: 0;
+    }
+}
+
 
 /* EXPERIENCE SECTION */
 
@@ -183,7 +215,7 @@ img {
 /* PROJECTS SECTION */
 #projects {
     padding: 50px 0;
-    background-color: #f8f9fa;
+    background-color: #71797E;
 }
 
 #projects .display-4 {
@@ -557,7 +589,7 @@ img {
 
 /* Blog Posts */
 .blog-posts {
-    display: flex; /* Arranges the children (blog posts) in a row */
+    display: flex; /* Arranges the children (blog posts) in a column */
     justify-content: space-between; /* Spaces out the blog posts evenly */
     flex-wrap: wrap; /* Allows the blog posts to wrap to the next line on smaller screens */
     gap: 1em; /* Spaces out the blog posts */
@@ -567,7 +599,7 @@ img {
     background-color: #f8f8f8; /* Light grey */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for 3D effect */
-    width: calc((100% - 2em) / 3); /* Each blog post will take up roughly a third of the available space, accounting for the gap */
+    width: 100%; /* Each blog post will take up the full width on mobile */
     padding: 1em; /* Padding around content */
 }
 
@@ -597,9 +629,19 @@ img {
 .blog-post-link:hover {
     color: #005580; /* Darker blue on hover */
 }
-.blog-post-content.hide {
-    display: none;
+
+/* Responsive Styling for larger screens */
+@media screen and (min-width: 768px) { 
+    .blog-posts {
+        flex-direction: row; /* Arranges the children (blog posts) in a row on larger screens */
+    }
+    
+    .blog-post {
+        width: calc((100% - 2em) / 3); /* Each blog post will take up roughly a third of the available space on larger screens, accounting for the gap */
+    }
 }
+
+
 
 
 
@@ -607,7 +649,7 @@ img {
 
 /* CONTACT SECTION */
 #contact {
-    background-color: #f9f9f9; /* Light grey */
+    background-color: #71797E; /* Light grey */
     padding: 50px 0;
 }
 
