@@ -9,27 +9,29 @@
     flex-direction: column;
     align-items: center;
     font-family: 'Arial', sans-serif;
+    width: 90%;
+    margin: auto;
 }
 
 /* Hero image styling */
 .hero-image {
     width: 100%;
-    height: 400px;
+    height: auto;
     overflow: hidden;
     margin-bottom: 2rem;
 }
 
 .hero-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
 /* Blog content styling */
 .blog-content {
-    width: 75%;
+    width: 100%;
     background-color: #f8f9fa;
-    padding: 2rem;
+    padding: 1rem;
     margin-bottom: 2rem;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -38,14 +40,14 @@
 .blog-content h1 {
     color: #333;
     text-align: center;
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
 }
 
 .blog-content h2 {
     color: #333;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 .blog-content p {
     color: #666;
@@ -55,27 +57,27 @@
 
 /* Image section styling */
 .image-section {
-    width: 75%;
-    height: 300px;
+    width: 100%;
+    height: auto;
     overflow: hidden;
     margin-bottom: 2rem;
 }
 
 .image-section img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
-/* For blog3.html - Subtitle styling */
+/* Subtitle styling */
 .subtitle {
-    font-size: 1.5em;
+    font-size: 1.3em;
     color: #555;
     text-align: center;
     margin-bottom: 1rem;
 }
 
-/* For blog3.html - Conclusion styling */
+/* Conclusion styling */
 .conclusion {
     background-color: #e3e3e3;
     padding: 1em;
@@ -97,4 +99,20 @@
     font-weight: bold;
     text-align: center;
     margin-top: 2em;
+}
+
+@media (min-width: 600px) {
+    .blog-content,
+    .image-section {
+        width: 75%;
+    }
+    .blog-content h1 {
+        font-size: 2.5em;
+    }
+    .blog-content h2 {
+        font-size: 2em;
+    }
+    .subtitle {
+        font-size: 1.5em;
+    }
 }

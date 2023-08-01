@@ -43,7 +43,7 @@ img {
 }
 
 .navbar .nav-link:hover {
-    color: #FFD700;
+    color:  #343a40;
 }
 
 /*HERO SECTION*/
@@ -125,7 +125,7 @@ img {
 }
 
 #hero .hero-btn {
-    background-color: #FFD700; /* Gold */
+    background-color:  #343a40;
     color: #d6d9db;
     border: none;
     padding: 10px 20px;
@@ -167,7 +167,7 @@ img {
 }
 
 #about .btn-primary {
-    background-color: #FFD700;
+    background-color:  #343a40;
     color: #343A40;
     border: none;
     transition: background-color 0.5s;
@@ -297,7 +297,7 @@ img {
 
 /* Skills Section */
 #skills {
-    background-color: #f2f2f2; /* Subtle Grey */
+    background-color: #D3D3D3; 
     padding: 50px 0;
 }
 
@@ -577,7 +577,6 @@ img {
 
 
 /* BLOG PREVIEW SECTION */
-/* Blog Section */
 .blog-section {
     background-color: #D3D3D3; /* White */
 }
@@ -772,7 +771,7 @@ img {
 }
 
 .footer .social-links a:hover {
-    color: #FFD700; /* Gold color when hovered */
+    color:  #343a40;
 }
 
 .footer .social-links img {
