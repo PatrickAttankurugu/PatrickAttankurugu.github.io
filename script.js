@@ -35,33 +35,3 @@ $(document).ready(function() {
         window.location.href = 'blog1.html';
     });
 });
-
-document.querySelector('#contact form').addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    // Input fields
-    let name = document.querySelector('#name');
-    let email = document.querySelector('#email');
-    let message = document.querySelector('#message');
-
-    // Email regex pattern
-    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-
-    // Check if the inputs are filled out
-    if(name.value === "" || email.value === "" || message.value === "") {
-        alert('Please fill out all fields.');
-        return;
-    }
-
-    // Check if the email address is in the correct format
-    if(!email.value.match(emailPattern)) {
-        alert('Please enter a valid email address.');
-        return;
-    }
-
-    // If all inputs are valid, show a success message
-    alert('Message sent successfully!');
-    name.value = '';
-    email.value = '';
-    message.value = '';
-});
