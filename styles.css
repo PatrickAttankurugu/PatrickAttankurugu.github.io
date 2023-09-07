@@ -20,12 +20,12 @@ img {
 
 .display-4 {
     font-size: 2.5rem;
-    color: #212529;
+    color: #81878d;
 }
 
 .lead {
     font-size: 1.25rem;
-    color: #6C757D;
+    color: #acb3b9;
 }
 
 /*NAVBAR*/
@@ -219,7 +219,7 @@ img {
 }
 
 #projects .display-4 {
-    color: #343a40;
+    color: #424446;
     font-size: 2.5rem;
     margin-bottom: 50px;
     text-transform: uppercase;
