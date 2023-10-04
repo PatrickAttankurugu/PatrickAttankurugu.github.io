@@ -176,3 +176,37 @@
         font-size: 1.5em;
     }
 }
+
+
+
+/*BUTTON*/
+/* CSS for the Call to Action button */
+.cta-button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #2c3e50; /* Change this to any color you prefer */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    /* Centering the button */
+    margin: 0 auto;
+    display: block;
+}
+
+/* Adding a hover effect to change background color */
+.cta-button:hover {
+    background-color: #34495e; /* Change this to any color you prefer */
+}
+
+/* The existing cta-section code */
+.cta-section {
+    text-align: center; /* Ensures text and button are centered */
+    margin: 2em 0; /* Adds some space above and below the section */
+}
+
