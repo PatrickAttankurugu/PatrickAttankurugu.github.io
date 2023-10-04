@@ -115,6 +115,52 @@
     margin-top: 2em;
 }
 
+
+/* Blog three continues*/
+.blog-container .content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.blog-container .content-section.purpose-driven-section {
+    flex-direction: row-reverse;
+}
+/* Text and image containers within each section */
+.blog-container .content-section .text,
+.blog-container .content-section .image {
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Styling for the image container */
+.blog-container .content-section .image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media query to switch to row layout on wider screens */
+@media (min-width: 768px) {
+    .blog-container .content-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .blog-container .content-section .text,
+    .blog-container .content-section .image {
+        width: 45%; /* Adjust width to allow for spacing */
+    }
+}
+
+@media (min-width: 768px) {
+    .blog-container .content-section.purpose-driven-section {
+        flex-direction: row-reverse;
+    }
+}
+
 @media (min-width: 600px) {
     .blog-content,
     .image-section {
