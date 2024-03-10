@@ -76,10 +76,36 @@ img {
     z-index: 1; /* Ensure the code animation appears behind your content */
 }
 
+
+
 .hero-content {
     position: relative;
-    z-index: 2; /* Ensure your content appears in front of the code animation */
-}
+    z-index: 2;
+  }
+  
+  .headshot {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #21D4FD;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .headshot:hover {
+    transform: scale(1.1);
+  }
+  
+  .client-logos img {
+    margin: 0 10px;
+    width: auto;
+    height: 50px; /* Adjust based on your preference */
+    opacity: 0.7;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .client-logos img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 
 @keyframes slide {
     0% { transform: translateY(100%); }

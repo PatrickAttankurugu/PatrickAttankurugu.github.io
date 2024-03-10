@@ -2,6 +2,26 @@ $(document).ready(function() {
     // Hide the elements initially
     $('#hero .display-4, #hero .lead').hide();
 
+
+    // Dynamic text change based on user interaction
+    function updateDynamicText() {
+        const texts = [
+            "An AI and Software Developer dedicated to driving innovation forward",
+            "Building smarter solutions with machine learning",
+            "Crafting the future of technology",
+            "Empowering businesses through AI",
+            "Innovating one project at a time"
+        ];
+        let count = 0;
+        setInterval(() => {
+            $('#dynamic-text').fadeOut(function() {
+                $(this).text(texts[count % texts.length]).fadeIn();
+            });
+            count++;
+        }, 3000);
+    }
+    updateDynamicText();
+
     // Fade in the elements
     $('#hero .display-4, #hero .lead').fadeIn(2000);
 
