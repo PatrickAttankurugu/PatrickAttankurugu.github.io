@@ -54,4 +54,6 @@ $(document).ready(function() {
     document.querySelector('#blog1').addEventListener('click', function() {
         window.location.href = 'blog1.html';
     });
+
+    
 });
