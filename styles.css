@@ -104,7 +104,7 @@ img {
 
 #hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('images/hero-bg.png') no-repeat center center/cover;
     color: #F8F9FA;
     display: flex;
     align-items: center;
