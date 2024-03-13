@@ -94,40 +94,6 @@ img {
     transform: scale(1.1);
   }
   
-  .client-logos img {
-    margin: 0 10px;
-    width: auto;
-    height: 50px; /* Adjust based on your preference */
-    opacity: 0.7;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  .client-logos img:hover {
-    opacity: 1;
-    transform: scale(1.1);
-  }
-
-  .client-logos {
-    display: flex;
-    justify-content: center; /* Align the logos in the center */
-    flex-wrap: wrap; /* Allow logos to wrap in the container */
-    margin-top: 30px; /* Adjust the space between the logos and the "Discover More" button */
-  }
-  
-  .client-logo {
-    margin: 5px; /* Space between logos */
-    width: 80px; /* Adjust the width as needed */
-    height: 80px; /* Adjust the height as needed */
-    border-radius: 50%; /* Makes the image rounded */
-    transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0.7; /* Make logos slightly transparent */
-  }
-  
-  .client-logo:hover {
-    opacity: 1; /* Full opacity on hover */
-    transform: scale(1.1); /* Slightly enlarge the logo on hover */
-  }
-  
 
 @keyframes slide {
     0% { transform: translateY(100%); }
@@ -147,6 +113,14 @@ img {
     position: relative;
     overflow: hidden;
 }
+
+/* Replace hero-bg.jpg when on mobile */
+@media (max-width: 768px) {
+    #hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/hero-bg1.jpg') no-repeat center center/cover;
+    }
+  }
+  
 
 #hero .hero-content {
     z-index: 2;
