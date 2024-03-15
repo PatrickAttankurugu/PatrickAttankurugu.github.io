@@ -6,11 +6,12 @@ $(document).ready(function() {
     // Dynamic text change based on user interaction
     function updateDynamicText() {
         const texts = [
-            "An AI and Software Developer dedicated to driving innovation forward",
-            "Building smarter solutions with machine learning",
-            "Crafting the future of technology",
+            "An AI and Software Developer",
+            "Dedicated to driving innovation forward",
+            "Fighting crime through AI-powered surveillance",
+            "Automating agriculture through AI",
             "Empowering businesses through AI",
-            "Innovating one project at a time"
+            "A hand you can hold"
         ];
         let count = 0;
         setInterval(() => {
