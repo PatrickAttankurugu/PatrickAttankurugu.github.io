@@ -8,9 +8,9 @@ $(document).ready(function() {
         const texts = [
             "An AI and Software Developer",
             "Dedicated to driving innovation forward",
-            "Fighting crime through AI-powered surveillance",
-            "Automating agriculture through AI",
-            "Empowering businesses through AI",
+            "Fighting crime with AI",
+            "Automating agriculture with AI",
+            "Empowering businesses with AI",
             "A hand you can hold"
         ];
         let count = 0;
@@ -53,7 +53,7 @@ $(document).ready(function() {
 
     // Blog button event listener
     document.querySelector('#blog1').addEventListener('click', function() {
-        window.location.href = 'blog1.html';
+        window.location.href = 'agritech.html';
     });
 
     
