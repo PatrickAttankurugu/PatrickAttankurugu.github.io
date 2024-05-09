@@ -1,0 +1,441 @@
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 0;
+  }
+  
+  .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.2;
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+  }
+  
+  .hero-section p.lead {
+    font-size: 1.5rem;
+    color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.2s forwards;
+  }
+  
+  .hero-section .btn-primary {
+    background-color:#333;
+
+    border-color: #333;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.4s forwards;
+  }
+  
+  .hero-section .btn-primary:hover {
+    background-color: #44576b;
+    border-color: #495664;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 3rem;
+    }
+    
+    .hero-section p.lead {
+      font-size: 1.2rem;
+    }
+    
+    .hero-section .btn-primary {
+      font-size: 1rem;
+      padding: 10px 24px;
+    }
+  }
+
+  /*ABOUT SECTION*/
+  .about-section {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%);
+    transform: skew(-20deg);
+    z-index: 1;
+  }
+  
+  .about-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .about-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeInDown 1s ease forwards;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.2s forwards;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 60px 0;
+    }
+    
+    .about-section h2 {
+      font-size: 2.5rem;
+    }
+    
+    .about-section p {
+      font-size: 1rem;
+    }
+  }
+
+  /*FEATURES SECTION*/
+  .features-section {
+    padding: 80px 0;
+    background-color: #f0f0f0;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .feature-item {
+    text-align: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .icon-container {
+    font-size: 3rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .feature-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .feature-item p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .feature-item {
+      margin-bottom: 30px;
+    }
+  }
+
+  /*BENEFITS*/
+  .benefits-section {
+    padding: 80px 0;
+    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .benefits-section::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 70%);
+    transform: translateY(-50%) rotate(45deg);
+    z-index: 1;
+  }
+  
+  .benefits-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .benefits-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeInDown 1s ease forwards;
+  }
+  
+  .benefits-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.2s forwards;
+  }
+  
+  .benefits-section li {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .benefits-section li:hover {
+    transform: translateY(-10px);
+  }
+  
+  .benefits-section li strong {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .benefits-section li p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .benefits-section h2 {
+      font-size: 2.5rem;
+    }
+    
+    .benefits-section ul {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  /*CTA*/
+  .cta-section {
+    background: linear-gradient(135deg, #333, #444);
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .cta-section::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+    transform: translateY(-50%) rotate(45deg);
+    z-index: 1;
+  }
+  
+  .cta-section .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .cta-section h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInDown 1s ease forwards;
+  }
+  
+  .cta-section p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.2s forwards;
+  }
+  
+  .cta-section .btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    opacity: 0;
+    animation: fadeInUp 1s ease 0.4s forwards;
+  }
+  
+  .cta-section .btn-light {
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #fff;
+  }
+  
+  .cta-section .btn-light:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cta-section h2 {
+      font-size: 2.5rem;
+    }
+    
+    .cta-section p {
+      font-size: 1.2rem;
+    }
+    
+    .cta-section .btn {
+      font-size: 1rem;
+      padding: 10px 24px;
+    }
+  }
